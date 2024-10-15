@@ -2,6 +2,7 @@
 
 Download docker-compose to run multiple dockers simultaneously
 install - ```sudo curl -L "https://github.com/docker/compose/release/download/v2.29.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose```
+
 Give user permissions - `sudo chmod +x /usr/local/bin/docker-compose`
 
 Write docker-compose code to run postgreSQL and MongoDB
@@ -15,6 +16,7 @@ Integrate main.py with storing of model realted data. and request related loggin
 
 To check if PostgreSQL is storing data or not, use the following docker command to access PostgreSQL commandline- 
 `sudo docker exec -it postgres psql -U postgres -d sentiment_db`
+
 From here you can access the commandline
 - `\dt`  show tables
 - `SELECT * FROM prediction;`
